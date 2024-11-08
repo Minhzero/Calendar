@@ -129,7 +129,8 @@ function App(): React.JSX.Element {
     const fetchData = async () => {
         const url = 'https://office.spsvn.com/api/Booking/GetByBKGroup/11';
         const token = 
-'eyJ0eXAiOiJKV1QiLCJub25jZSI6IkZqY2VNZEw3Wk5pczBKLVN5TkhYc1picWRKcndoUGpGR0UtSnpsOU9PMU0iLCJhbGciOiJSUzI1NiIsIng1dCI6IjNQYUs0RWZ5Qk5RdTNDdGpZc2EzWW1oUTVFMCIsImtpZCI6IjNQYUs0RWZ5Qk5RdTNDdGpZc2EzWW1oUTVFMCJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9iZDZhMjEwNS03NDM3LTQxNGUtYWI0Zi01YTE3MDFiMTYwMTkvIiwiaWF0IjoxNzMxMDMyMzIyLCJuYmYiOjE3MzEwMzIzMjIsImV4cCI6MTczMTAzNjUwNiwiYWNyIjoiMSIsImFpbyI6IkFUUUF5LzhZQUFBQXFBYmxvRzVsK2N1L2I3aUNHZUllOWxQeXN0S2tuMU5VNFF6Tjk5Ym0vU1VtdXdZTXM3VWtadzFVRTRoMkZtS1oiLCJhbXIiOlsicHdkIl0sImFwcF9kaXNwbGF5bmFtZSI6IlNQMzY1IiwiYXBwaWQiOiI0YTE3YzJlMi0yMDEyLTQ1ZDAtOGJmMy00YTFjOTlkMGYyYjMiLCJhcHBpZGFjciI6IjAiLCJmYW1pbHlfbmFtZSI6Ik5ndXnhu4VuIFF1YW5nIiwiZ2l2ZW5fbmFtZSI6Ik1pbmgiLCJpZHR5cCI6InVzZXIiLCJpcGFkZHIiOiIxMjMuMTcuMTUxLjUyIiwibmFtZSI6Ik5ndXnhu4VuIFF1YW5nIE1pbmgiLCJvaWQiOiIwODMxNDcwMS1hNTUxLTRiYmQtYWJmNy0yZWI2MzgwOTRkN2QiLCJwdWlkIjoiMTAwMzIwMDNEOTk2RDdGRiIsInJoIjoiMS5BVDRBQlNGcXZUZDBUa0dyVDFvWEFiRmdHUU1BQUFBQUFQRVB6Z0FBQUFBQUFBQS1BTW8tQUEuIiwic2NwIjoiQWxsU2l0ZXMuRnVsbENvbnRyb2wgQWxsU2l0ZXMuTWFuYWdlIENhbGVuZGFycy5SZWFkV3JpdGUgVXNlci5SZWFkIiwic2lkIjoiMWY3ODcxYzItOWQ4ZS00OWJlLWIzYzItZTU4NTk5MjNiZDg2Iiwic2lnbmluX3N0YXRlIjpbImttc2kiXSwic3ViIjoiNjZNTlQ4RlE1ZXJScHQ1aGY3U3R2TjhrYXhYMjJUUnZXUHFDbjdkU0JwZyIsInRpZCI6ImJkNmEyMTA1LTc0MzctNDE0ZS1hYjRmLTVhMTcwMWIxNjAxOSIsInVuaXF1ZV9uYW1lIjoibWluaG5xQHNwc3ZuLmNvbSIsInVwbiI6Im1pbmhucUBzcHN2bi5jb20iLCJ1dGkiOiJhM3ZwMjRjZk1FU2oybG9qSjVjVUFBIiwidmVyIjoiMS4wIiwid2lkcyI6WyJiNzlmYmY0ZC0zZWY5LTQ2ODktODE0My03NmIxOTRlODU1MDkiXSwieG1zX2lkcmVsIjoiMTQgMSIsInhtc19wZnRleHAiOjE3MzExMjI5MDZ9.XHOMlmLDVN_q5UiVcDUfWpP3ZHgzObnWKtzQBQFJ-wYRv264sIxubItXf9EE6_K-8AlAptYXF8PaXXWMaNXnRjsy2WPGc_UwRgOjLBx3atrS-LezX6caeZM13acHEHjVqcZDj7_UcOc4_QoHyS0a-jjDKPXK9qzULrYKsyGvdm56jRHLKft_fZOK2BwXQ_FKm-vJzcbQlA3JuntT6u_ppFMIDan-EuFn3EuyGywWVes8P1Tz-mhncbWY52E22AVpvqnbWfEH2gyH81mKCWWmB9I6zXHsRwZqxvs_9pB-6Rn95Nxh-Ci_HNQTnONae5pXjtdBrBha8SnDjFtJZ-ilWA'
+'eyJ0eXAiOiJKV1QiLCJub25jZSI6IkRaRURSRDkyMzFvWkttQXp1d0VpSGw3Um1ZMld2STVqRVBCX0hnVkRTSk0iLCJhbGciOiJSUzI1NiIsIng1dCI6IjNQYUs0RWZ5Qk5RdTNDdGpZc2EzWW1oUTVFMCIsImtpZCI6IjNQYUs0RWZ5Qk5RdTNDdGpZc2EzWW1oUTVFMCJ9.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9iZDZhMjEwNS03NDM3LTQxNGUtYWI0Zi01YTE3MDFiMTYwMTkvIiwiaWF0IjoxNzMxMDM1Njg0LCJuYmYiOjE3MzEwMzU2ODQsImV4cCI6MTczMTAzOTY4MSwiYWNyIjoiMSIsImFpbyI6IkFUUUF5LzhZQUFBQXZnQTh1aXZRZ3crbnY2L3QyNlN1ZVdrWG9kOHZKa2taZUtqalNRaUVRNE5ocTYyMzdtaWd2M3EwcUJQbGIrSTQiLCJhbXIiOlsicHdkIl0sImFwcF9kaXNwbGF5bmFtZSI6IlNQMzY1IiwiYXBwaWQiOiI0YTE3YzJlMi0yMDEyLTQ1ZDAtOGJmMy00YTFjOTlkMGYyYjMiLCJhcHBpZGFjciI6IjAiLCJmYW1pbHlfbmFtZSI6Ik5ndXnhu4VuIFF1YW5nIiwiZ2l2ZW5fbmFtZSI6Ik1pbmgiLCJpZHR5cCI6InVzZXIiLCJpcGFkZHIiOiIxNC4yMzIuMTIwLjc4IiwibmFtZSI6Ik5ndXnhu4VuIFF1YW5nIE1pbmgiLCJvaWQiOiIwODMxNDcwMS1hNTUxLTRiYmQtYWJmNy0yZWI2MzgwOTRkN2QiLCJwdWlkIjoiMTAwMzIwMDNEOTk2RDdGRiIsInJoIjoiMS5BVDRBQlNGcXZUZDBUa0dyVDFvWEFiRmdHUU1BQUFBQUFQRVB6Z0FBQUFBQUFBQS1BTW8tQUEuIiwic2NwIjoiQWxsU2l0ZXMuRnVsbENvbnRyb2wgQWxsU2l0ZXMuTWFuYWdlIENhbGVuZGFycy5SZWFkV3JpdGUgVXNlci5SZWFkIiwic2lkIjoiMWY3ODcxYzItOWQ4ZS00OWJlLWIzYzItZTU4NTk5MjNiZDg2Iiwic2lnbmluX3N0YXRlIjpbImttc2kiXSwic3ViIjoiNjZNTlQ4RlE1ZXJScHQ1aGY3U3R2TjhrYXhYMjJUUnZXUHFDbjdkU0JwZyIsInRpZCI6ImJkNmEyMTA1LTc0MzctNDE0ZS1hYjRmLTVhMTcwMWIxNjAxOSIsInVuaXF1ZV9uYW1lIjoibWluaG5xQHNwc3ZuLmNvbSIsInVwbiI6Im1pbmhucUBzcHN2bi5jb20iLCJ1dGkiOiI2ZUpYbHd6VjlFR2ZDYWNQcjkySkFBIiwidmVyIjoiMS4wIiwid2lkcyI6WyJiNzlmYmY0ZC0zZWY5LTQ2ODktODE0My03NmIxOTRlODU1MDkiXSwieG1zX2lkcmVsIjoiMSAyMiIsInhtc19wZnRleHAiOjE3MzExMjYwODF9.hgRwBLaxCtKsxwn6s2cKVfLBAQFI56av5UPgQ9002mCmc_CJoAYgvYqe5gTcruVzvAKO3csqYUDijOTPVG4aeLGNAneIDyC3-CNc7QEYgTqm1Ou4MaQ6SZzlQK9HRiMNSe6nH_C8TBLD1C-8Rl8-SfSvQJbUjQO3z10eH41AY6Ry6hsR03HEpHS7i7oL_9nc9M8dmvbKq80jzpxV2Ko2lvWedN4Nmyj6WOKMkngx7u8BVcEv5rgoRg9Oyh4CooDRUnVRbDvUja0GjHfMNK3DgMFzoZjw8eSnrhKguEyYyXHKhwmT0DqRre873NGM-EhLWUZYMEKWy9Y_gUDrVfbVdg'
+
         const requestBody = {
             MetaData: "",
             OrderBy: "StartTime",
@@ -177,12 +178,12 @@ function App(): React.JSX.Element {
             const eventsJobData = dataList.map(item => {
                 const createdDate = moment(item.Created).startOf('day');
                 const datePart = createdDate.format('YYYY-MM-DD');
-                console.log("sfg",new Date(datePart));
+                console.log("sfg",new Date(datePart + 'T00:00:00Z'));
                 
 
                 return {
                     id: item.ID.toString(),
-                    date: new Date(datePart),
+                    date: new Date(datePart + 'T00:00:00Z'),
                     events: [
                         {
                             id: item.ID.toString(),
@@ -243,11 +244,20 @@ function App(): React.JSX.Element {
     console.log("Events for calendar:", eventsJobData);
     // In ra toàn bộ sự kiện
     console.log("Events:11", eventsJob);
-    return (
-        <View style={{ flex: 1 }}>
-            <RtnCalendar events={eventsJob} />
-        </View>
-    );
+
+    if (eventsJob.length > 0) {
+        return (
+            <View style={{ flex: 1 }}>
+                <RtnCalendar events={eventsJob} />
+            </View>
+        );
+    } else {
+        return (
+            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+                <Text>Không có sự kiện nào để hiển thị</Text>
+            </View>
+        );
+    }
 }
 
 const styles = StyleSheet.create({
